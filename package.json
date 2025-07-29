@@ -1,9 +1,9 @@
 {
-  "name": "viz-dash-studio",
+  "name": "react-dash-board-learn",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://yourusername.github.io/viz-dash-studio",
+  "homepage": "https://knightmdy.github.io/react-dash-board-learn",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -89,4 +89,5 @@
     "vite": "^5.4.1"
   }
 }
+
 
