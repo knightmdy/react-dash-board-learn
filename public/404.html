@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>页面重定向</title>
+  <script>
+    // GitHub Pages SPA 重定向处理
+    const path = window.location.pathname.slice(1);
+    const base = '/viz-dash-studio/';
+    if (path && !path.startsWith(base.slice(1))) {
+      window.location.replace(window.location.origin + base + '#/' + path);
+    } else {
+      window.location.replace(window.location.origin + base);
+    }
+  </script>
+</head>
+<body>
+  <p>页面重定向中...</p>
+</body>
+</html>
