@@ -6,12 +6,14 @@
   <title>页面重定向</title>
   <script>
     // GitHub Pages SPA 重定向处理
-    const path = window.location.pathname.slice(1);
-    const base = '/react-dash-board-learn/';
-    if (path && !path.startsWith(base.slice(1))) {
-      window.location.replace(window.location.origin + base + '#/' + path);
+    const path = window.location.pathname;
+    const base = '/react-dash-board-learn';
+    
+    if (path !== base && path !== base + '/') {
+      const redirect = path.replace(base, '');
+      window.location.replace(window.location.origin + base + '/#' + redirect);
     } else {
-      window.location.replace(window.location.origin + base);
+      window.location.replace(window.location.origin + base + '/');
     }
   </script>
 </head>
@@ -19,3 +21,4 @@
   <p>页面重定向中...</p>
 </body>
 </html>
+
